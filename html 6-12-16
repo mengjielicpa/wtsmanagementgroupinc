@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>table</title>
+</head>
+<body>
+<table border="1px">
+	<!-- tr: table row -->
+	<tr>
+	<!-- th:table heading -->
+		<th>Name</th>
+		<th>Sex</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+	<!-- td:for table data -->
+		<td>David</td>
+		<td>Male</td>
+		<td>50</td>
+	</tr>
+	<tr>	
+		<td>Jack</td>
+		<td>Female</td>
+		<td>30</td>
+	</tr>
+</table>
+<!-- h5 standards -->
+<table border="1px" width="100%">
+	<caption>this is my h5 table</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Sex</th>
+			<th>Age</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>David</td>
+			<td>Male</td>
+			<td>50</td>
+		</tr>
+		<tr>	
+			<td>Jack</td>
+			<td>Female</td>
+			<td>30</td>
+	</tr>
+	</tbody>
+</table>
+<!-- colspan rowspan
+	name phonenumber
+	David 555|666
+	Jack  777|888 -->
+	<table width="100%" border="1px">
+		<caption>colspan and rowspan</caption>
+	<!-- colgroup: must be used after caption and use col element within colgroup for styling columns -->
+		<colgroup>
+		<col style="background-color:yellow">
+		<col style="background-color:red">
+		<col style="background-color:green">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>name</th>
+				<th colspan="2">phonenumber</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">David</td>
+				<td>555</td>
+				<td>666</td>
+			</tr>
+			<tr>
+				<td>777</td>
+				<td>888</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
